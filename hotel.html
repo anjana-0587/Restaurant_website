@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <style>
+        .hero-section {
+            background: url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=1200') center/cover no-repeat;
+            height: 80vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .menu img {
+            border-radius: 10px;
+        }
+
+        footer {
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Delicious</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="home" class="hero-section">
+    <h1>Welcome to Delicious</h1>
+    <p>Good food, good mood!</p>
+    <a href="#menu" class="btn btn-warning btn-lg">View Menu</a>
+</section>
+<section id="menu" class="menu container py-5">
+    <h2 class="text-center mb-4">Our Menu</h2>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Burger</h5>
+                    <p class="card-text">Juicy grilled beef burger with fresh veggies.</p>
+                    <p class="text-success fw-bold">₹150</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1543353071-087092ec393a?w=600" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Cheesy delicious pizza with toppings of your choice.</p>
+                    <p class="text-success fw-bold">₹250</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Pasta</h5>
+                    <p class="card-text">Creamy Italian-style pasta served hot.</p>
+                    <p class="text-success fw-bold">₹200</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="container py-5">
+    <h2 class="text-center mb-3">About Us</h2>
+    <p class="text-center">
+        We are a family-owned restaurant serving fresh and tasty food since 2010.  
+        Our chefs bring passion to every dish to give you a delightful experience.
+    </p>
+</section>
+<section id="contact" class="container py-5">
+    <h2 class="text-center mb-3">Contact Us</h2>
+
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <form class="border p-4 rounded">
+                <div class="mb-3">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+
+                <div class="mb-3">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+
+                <div class="mb-3">
+                    <label>Message</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+
+                <button class="btn btn-primary w-100">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    © 2025 Delicious Restaurant. All rights reserved.
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
